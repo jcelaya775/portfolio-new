@@ -15,41 +15,39 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-900 mt-4`}>
-        <main className="container m-auto sticky">
-          <div className="w-full p-2">
-            <div className="flex justify-between">
-              {/* Buttons */}
-              <div className="flex flex-col ml-4">
-                <button className="text-left py-1 px-2 mb-2 bg-indigo-700 rounded-lg text-neutral-100 hover:bg-indigo-800">
-                  Resume
-                </button>
-                <button className="text-left py-1 px-2 bg-indigo-700 rounded-lg text-neutral-100 hover:bg-indigo-800">
-                  Blog
-                </button>
-              </div>
-              {/* Sections */}
-              <div className="flex flex-col text-right">
-                <h2 className="cursor-pointer hover:text-indigo-400">About</h2>
-                <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
-                  Projects
-                </h2>
-                <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
-                  Experience
-                </h2>
-                <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
-                  Skills
-                </h2>
-                <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
-                  Education
-                </h2>
-                <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
-                  Contact
-                </h2>
-              </div>
+      <body className={`${inter.className} bg-gray-900`}>
+        <main className="container m-auto">
+          <nav className="h-full container m-auto w-[200%] fixed z-10 left-0 right-0 flex justify-between ">
+            {/* Buttons */}
+            <div className="flex flex-col">
+              <button className="text-left py-1 px-2 mb-2 bg-indigo-700 rounded-lg text-neutral-100 hover:bg-indigo-800">
+                Resume
+              </button>
+              <button className="text-left py-1 px-2 bg-indigo-700 rounded-lg text-neutral-100 hover:bg-indigo-800">
+                Blog
+              </button>
             </div>
-            <div className="relative">{children}</div>
-          </div>
+            {/* Sections */}
+            <div className="flex flex-col text-right relative -top-[4px]">
+              <h2 className="cursor-pointer hover:text-indigo-400">About</h2>
+              <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
+                Projects
+              </h2>
+              <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
+                Experience
+              </h2>
+              <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
+                Skills
+              </h2>
+              <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
+                Education
+              </h2>
+              <h2 className="text-slate-400 cursor-pointer hover:text-indigo-400">
+                Contact
+              </h2>
+            </div>
+          </nav>
+          {children}
         </main>
       </body>
     </html>

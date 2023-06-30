@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <div>
-      <h1 className="mt-24">
+    <div className="bg-indigo-950 text-gray-200 p-16 leading-7">
+      <h1 className="mt-4">
+        <span className="mr-16" />
         laborum! Eligendi nesciunt laudantium ipsum est dolorum. Animi similique
         expedita repellendus ut, quod molestiae cumque sequi consectetur vero
         voluptatibus temporibus, magni ea natus aspernatur facere. Dicta sit
@@ -24,6 +25,7 @@ export default function Home() {
         provident dolor vero? Fugit, deleniti eos.
       </h1>
       <h1 className="mt-4">
+        <span className="mr-16" />
         accusantium blanditiis, eaque magnam aspernatur nesciunt vero, modi, sit
         tempore nulla illum inventore. Nihil veniam hic, ipsa soluta aut
         deleniti at deserunt id optio blanditiis et sapiente accusamus, culpa,
@@ -47,6 +49,7 @@ export default function Home() {
         reprehenderit vero blanditiis obcaecati natus amet qui laudantium ipsam.
       </h1>
       <h1 className="mt-4">
+        <span className="mr-16" />
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
         ab officia, facilis harum, corrupti porro perferendis magnam, nesciunt
         autem sequi consectetur in laudantium earum illo sit voluptatibus
@@ -165,6 +168,7 @@ export default function Home() {
         tenetur magnam laboriosam dolorem suscipit id magni autem ratione
       </h1>
       <h1 className="mt-4">
+        <span className="mr-16" />
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
         ab officia, facilis harum, corrupti porro perferendis magnam, nesciunt
         autem sequi consectetur in laudantium earum illo sit voluptatibus
